@@ -5,10 +5,5 @@
 Подсказка: использовать функцию reduce()."""
 from functools import reduce
 
-
-def my_mult(pre_el, el):
-    return pre_el * el
-
-
 new_list = [x for x in range(100, 1001, 2)]
-print(reduce(my_mult, new_list))
+print(reduce(lambda pre_el, el: pre_el * el, new_list))
