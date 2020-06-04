@@ -41,9 +41,10 @@ print(my_func(2, 1, 4))
 
 # без **
 def my_func(a, b):
+
     if a > 0 > b and isinstance(b, int):
         ans = 1 / a
-        for i in range(-b - 1):
+        for _ in range(-b - 1):
             ans *= 1 / a
         print(ans)
     else:
